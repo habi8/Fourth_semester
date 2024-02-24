@@ -1,0 +1,57 @@
+How to Convert ER Diagrams to Tables in DBMS?
+
+To convert ER diagrams to tables in a database management system (DBMS), follow the methods outlined below:
+Step 1
+
+Converting strong entities
+
+    Create a separate table with about the same name for each strong object.
+    If there is a composite attribute that has to be included, it must be separated into simple attributes.
+    At this point, ignore multivalued characteristics.
+    For the table, press the P key.
+
+Step 2
+
+Converting weak entity
+
+    Create a separate table with the very same name for each weak entity.
+    Include all attributes in your list.
+    The weak entity includes the P key of a strong entity as a foreign key.
+    Declare the weak entity’s P key as a combination of foreign key as well as decimator attribute.
+
+Step 3
+
+Converting one-to-one relationship
+
+    Modify either the A or B side of each one-to-one connection, say A and B, to add the P key of the opposite side as a foreign key.
+    If A or B has 100% participation, then the table should be modified.
+    Include attributes in the modified table if a relationship contains them.
+
+Step 4
+
+Converting one-to-many relationship
+
+    Modify the M side of each one-to-many relation to include the P key of one of the sides as a foreign key.
+    If your relationships have attributes, make sure to mention them as well.
+
+Step 5
+
+Converting many-to-many relationship
+
+    Create a new table for each many-to-many relationship, using the P key from the M side and the N side as foreign keys.
+    Declare P for the new table’s foreign key combination.
+    If your relationships have properties, insert those in the new table as well.
+
+Step 6
+
+Converting multivalued attributes
+
+    Create a separate table for each multivalued attribute and use the current table’s P key as a foreign key.
+    P keys are created by combining a foreign key and a multivalued attribute.
+
+Step 7
+
+Converting n-ary relationship
+
+    Create a separate table for each n-ary relationship and then include the P key of all the entities as a foreign key.
+    Declare the P key as a combination of foreign keys.
